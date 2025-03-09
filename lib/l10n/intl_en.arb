@@ -1,0 +1,22 @@
+{
+  "@@locale": "en",
+  "loginScreen": "Login Screen",
+  "frenziApp": "Frenzi App",
+  "loginToContinue": "Login to continue",
+  "oopsSomethingWentWrongPleaseTryAgainLater": "Oops! Something went wrong. Please try again later.",
+  "continueWord": "Continue",
+  "oops": "Oops!",
+  "tripDetails": "Trip Details",
+  "completedTrips": "Completed Trips",
+  "bookingJourney": "Booking Journey . . .",
+  "loadingRecentJourneys": "Loading recent Journeys . . .",
+  "journeyAdded": "Journey Added",
+  "proceed": "Proceed",
+  "addNewJourney": "Add New Journey",
+  "bookThisJourney": "Book this Journey",
+  "resetCache": "Reset cache",
+  "simulateError": "Simulate Error",
+  "whereTo": "Where to?",
+  "pickUpAt": "Pick up at?",
+  "pleaseNoteThatTheApiKeyThatWeUsedFor": "Please note that the API key that we used for Google Maps does not support Google Places :("
+}

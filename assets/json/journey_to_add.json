@@ -1,0 +1,89 @@
+{
+    "trips":[
+        {
+            "id":4,
+            "pickUpName":"Styal Golf Club",
+            "pickUpAddress": "Station Rd, Styal, Wilmslow SK9 4JN, United Kingdom",
+            "dropOffName":"Lucy Dempster - Reflexology",
+            "dropOffAddress":"25 Coniston Dr, Handforth, Wilmslow SK9 3NN, United Kingdom",
+            "fare":43.0,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.35569915630981,
+                "longitude": -2.238846806534958
+            },
+            "dropOffLocation": {
+                "latitude": 53.3522667653188, 
+                "longitude": -2.2223673144757643
+            }
+        },
+        {
+            "id":5,
+            "pickUpName":"The Handforth Lodge",
+            "pickUpAddress": "188 Wilmslow Rd, Handforth, Wilmslow SK9 3JX, United Kingdom",
+            "dropOffName":"Head Over Heels",
+            "dropOffAddress":"Unit D1 Commercial Ave, Cheadle Hulme, Handforth, Cheadle SK8 6QH, United Kingdom",
+            "fare":21.4,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.35521249078034,
+                "longitude": -2.217174557738986
+            },
+            "dropOffLocation": {
+                "latitude": 53.354418445690776, 
+                "longitude": -2.2049436847670134
+            }
+        },
+        {
+            "id":6,
+            "pickUpName":"Total Fitness Wilmslow",
+            "pickUpAddress": "Off A34, Wilmslow - Handforth Bypass, Handforth, Wilmslow SK9 3PE, United Kingdom",
+            "dropOffName":"Grove End Farm",
+            "dropOffAddress":"12 Blossoms Ln, Woodford, Stockport SK7 1RF, United Kingdom",
+            "fare":64.45,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.350909101441395,
+                "longitude": -2.1964464464976508
+            },
+            "dropOffLocation": {
+                "latitude": 53.342915940114345, 
+                "longitude": -2.1955023089349024
+            }
+        },
+        {
+            "id":7,
+            "pickUpName":"The Stanneylands",
+            "pickUpAddress": "Stanneylands Rd, Wilmslow SK9 4EY, United Kingdom",
+            "dropOffName":"Heatherlea Guest House",
+            "dropOffAddress":"106 Lacey Grn, Wilmslow SK9 4BN, United Kingdom",
+            "fare":39.1,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.34317215434401,
+                "longitude": -2.2275171555029383
+            },
+            "dropOffLocation": {
+                "latitude": 53.33827819477783, 
+                "longitude": -2.22803213964763
+            }
+        },
+        {
+            "id":8,
+            "pickUpName":"Styal-ish Paws Dog grooming",
+            "pickUpAddress": "Altrincham Rd, Styal, Wilmslow SK9 4LH, United Kingdom",
+            "dropOffName":"Bollin Valley Way Boardwalk",
+            "dropOffAddress":"Bollin Vly Wy, Wilmslow SK9 4LA, United Kingdom",
+            "fare":8.7,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.3515238979179,
+                "longitude": -2.255669621390503
+            },
+            "dropOffLocation": {
+                "latitude": 53.346554039080246, 
+                "longitude": -2.25948908698526
+            }
+        }
+    ]
+}

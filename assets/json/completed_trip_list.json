@@ -1,0 +1,55 @@
+{
+    "trips":[
+        {
+            "id":1,
+            "pickUpName":"Manchester Airport",
+            "pickUpAddress": "Manchester M90 1QX, United Kingdom",
+            "dropOffName":"National Trust - Quarry Bank",
+            "dropOffAddress":"Styal Rd, Styal, Wilmslow SK9 4HP, UK",
+            "fare":50.0,
+            "date":"2025-03-07 11:27",
+            "pickUpLocation": {
+                "latitude": 53.36776626876805,
+                "longitude": -2.2756242905459314
+            },
+            "dropOffLocation": {
+                "latitude": 53.3465934283423, 
+                "longitude": -2.247358038120456
+            }
+        },
+        {
+            "id":2,
+            "pickUpName":"BlackBird Packaging UK",
+            "pickUpAddress": "29 Beaford Rd, Wythenshawe, Manchester M22 0AG, United Kingdom",
+            "dropOffName":"Woodhouse Park, Wythenshawe",
+            "dropOffAddress":"Portway, Wythenshawe, Manchester, M22 1QW",
+            "fare":23.5,
+            "date":"2025-03-08 11:27",
+            "pickUpLocation": {
+                "latitude": 53.36681203966478, 
+                "longitude": -2.2566394091712603
+            },
+            "dropOffLocation": {
+                "latitude": 53.37777860609762, 
+                "longitude": -2.2669525931432952
+            }
+        },
+        {
+            "id":3,
+            "pickUpName":"Virgin Media O2 Wythenshawe Concord House",
+            "pickUpAddress": "Concord Business Park, Threapwood Rd, Wythenshawe, Manchester M22 0EY, United Kingdom",
+            "dropOffName":"St Elizabeth’s RC Church",
+            "dropOffAddress":"Holliney Rd, Wythenshawe, Manchester M22 5JF, United Kingdom",
+            "fare":15.1,
+            "date":"2025-03-09 11:27",
+            "pickUpLocation": {
+                "latitude": 53.37438439970691,
+                "longitude": -2.252716699395941
+            },
+            "dropOffLocation": {
+                "latitude": 53.376970183396445, 
+                "longitude": -2.2455069219744175
+            }
+        }
+    ]
+}
