@@ -90,6 +90,29 @@ class _JourneyDetailPageState extends State<JourneyDetailPage> {
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
+    final bounds = LatLngBounds(
+      southwest: LatLng(
+        widget.journey.pickUpLocation.latitude <
+                widget.journey.dropOffLocation.latitude
+            ? widget.journey.pickUpLocation.latitude
+            : widget.journey.dropOffLocation.latitude,
+        widget.journey.pickUpLocation.longitude <
+                widget.journey.dropOffLocation.longitude
+            ? widget.journey.pickUpLocation.longitude
+            : widget.journey.dropOffLocation.longitude,
+      ),
+      northeast: LatLng(
+        widget.journey.pickUpLocation.latitude >
+                widget.journey.dropOffLocation.latitude
+            ? widget.journey.pickUpLocation.latitude
+            : widget.journey.dropOffLocation.latitude,
+        widget.journey.pickUpLocation.longitude >
+                widget.journey.dropOffLocation.longitude
+            ? widget.journey.pickUpLocation.longitude
+            : widget.journey.dropOffLocation.longitude,
+      ),
+    );
+    mapController!.animateCamera(CameraUpdate.newLatLngBounds(bounds, 100));
     setState(
       () {
         markers.add(

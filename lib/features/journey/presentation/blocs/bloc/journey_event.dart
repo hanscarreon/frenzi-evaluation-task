@@ -5,5 +5,9 @@ sealed class JourneyEvent {}
 
 class CreateNewJourneyEvent extends JourneyEvent {
   final bool simulateErrorScenario;
-  CreateNewJourneyEvent({required this.simulateErrorScenario,});
+  final JourneyDetailModel journey;
+  CreateNewJourneyEvent({
+    required this.simulateErrorScenario,
+    required this.journey,
+  });
 }

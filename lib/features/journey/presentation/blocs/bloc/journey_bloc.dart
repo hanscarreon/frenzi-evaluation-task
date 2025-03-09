@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frenzi_app/features/journey/data/journey_repository.dart';
+import 'package:frenzi_app/features/journey/domain/models/journey_model.dart';
 
 part 'journey_event.dart';
 part 'journey_state.dart';
@@ -29,6 +30,7 @@ class JourneyBloc extends Bloc<JourneyEvent, JourneyState> {
 
       final response = await journeyRepository.createNewJourney(
         simulateErrorScenario: event.simulateErrorScenario,
+        journey: event.journey,
       );
 
       response.id > 0 ? emit(JourneyAdded()) : emit(JourneyError());

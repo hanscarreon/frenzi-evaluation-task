@@ -206,9 +206,8 @@ class CompletedJourneyTemplate extends StatelessWidget {
                                   fontSize: 14,
                                 ),
                               ),
-                              const Icon(Icons.currency_pound),
                               Text(
-                                journey.fare.toString(),
+                                '₱ ${journey.fare.toString()}',
                                 style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.bold,
                                   color: ColorName.black,
@@ -225,7 +224,6 @@ class CompletedJourneyTemplate extends StatelessWidget {
               ),
             ],
           ),
-          
         ],
       ),
     );

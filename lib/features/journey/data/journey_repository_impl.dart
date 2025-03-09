@@ -22,14 +22,15 @@ class JourneyRepositoryImpl extends JourneyRepository {
   @override
   Future<JourneyDetailModel> createNewJourney({
     required bool simulateErrorScenario,
+    required JourneyDetailModel journey,
   }) async {
     try {
       if (simulateErrorScenario) {
         return JourneyDetailModel.empty();
       }
-      final jsonResponse =
-          await FixtureReader.loadJsonFromAssets(name: 'journey_to_add.json');
-      JourneyDetailModel response = JourneyDetailModel.empty();
+      // final jsonResponse =
+      //     await FixtureReader.loadJsonFromAssets(name: 'journey_to_add.json');
+      // JourneyDetailModel response = JourneyDetailModel.empty();
 
       final prefs = SharedPreferencesAsync();
       final storedJourneys =
@@ -37,20 +38,21 @@ class JourneyRepositoryImpl extends JourneyRepository {
       JourneyModel existingJourneys = JourneyModel.fromJson(
         jsonDecode(storedJourneys),
       );
+      existingJourneys.trips.add(journey);
 
-      final journeys = JourneyModel.fromJson(jsonResponse);
+      // final journeys = JourneyModel.fromJson(jsonResponse);
 
-      for (var i = 0; i < journeys.trips.length; i++) {
-        final currentJourney = journeys.trips[i];
-        final checkIfExists = existingJourneys.trips
-            .where((element) => element.id == currentJourney.id)
-            .toList();
-        if (checkIfExists.isEmpty) {
-          existingJourneys.trips.add(currentJourney);
-          response = currentJourney;
-          break;
-        }
-      }
+      // for (var i = 0; i < journeys.trips.length; i++) {
+      //   final currentJourney = journeys.trips[i];
+      //   final checkIfExists = existingJourneys.trips
+      //       .where((element) => element.id == currentJourney.id)
+      //       .toList();
+      //   if (checkIfExists.isEmpty) {
+      //     existingJourneys.trips.add(currentJourney);
+      //     response = currentJourney;
+      //     break;
+      //   }
+      // }
 
       await prefs.setString(
         AppConstants.journeysKey,
@@ -59,7 +61,7 @@ class JourneyRepositoryImpl extends JourneyRepository {
         ),
       );
 
-      return response;
+      return journey;
     } catch (e) {
       return JourneyDetailModel.empty();
     }
